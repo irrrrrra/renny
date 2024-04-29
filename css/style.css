@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "ClashDisplay";
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url(../fonts/ClashGrotesk-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url(../fonts/ClashGrotesk-Semibold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url(../fonts/ClashGrotesk-Bold.woff2);
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark-pink: #DF4069;
+    --color-pink: #FC7093;
+    --color-lite: #FFE5EC;
+    --color-lite-pink: #FDA7BD;
+}
+
+header {
+    display: grid;
+    row-gap: 20px;
+    padding: 20px 14vw;
+    background-color: var(--color-lite);
+}
+
+header>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+header>div span {
+    justify-self: center;
+    font-family: "ClashDisplay";
+    font-size: 24px;
+}
+
+header>div div.icons {
+    justify-self: end;
+    display: grid;
+    column-gap: 1vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header>div svg{
+    height: 30px;
+    color: var(--color-black);
+}
+
+header nav {
+    justify-self: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 4vw;
+    color: var(--color-black);
+    font-family: "ClashDisplay";
+    font-weight: 200;
+    font-size: 16px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: ClashDisplay;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main section.header{
+    position: relative;
+    display: grid;
+    grid-template-rows: 44vw;
+ }
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    width: 840px;
+    height: 840px;
+    left: -250px;
+    top: 150px;
+    background: #FB6F92;
+    filter: blur(50px);
+}
+
+.circle2 {
+    border-radius: 50%;
+    position: absolute;
+    width: 840px;
+    height: 840px;
+    right: -380px;
+    top: 460px;
+    background: #DF3F68;
+    filter: blur(50px);
+}
+
+main section.header h1, .btn-group{
+    position: absolute;
+}
+
+main section.header h1 {
+    font-family: "ClashGrotesk";
+    font-size: 250px;
+    font-weight: 900;
+    padding: 16vw;
+}
+
+main section.header .btn-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding: 40vw;
+}
+
+button {
+    border: none;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 80px;
+    cursor: pointer;
+}
+
+main section.header .btn1 {
+    background-color: var(--color-pink);
+    color: var(--color-lite);
+    row-gap: 20px;
+}
+
+main section.header .btn2 {
+    background-color: var(--color-lite);
+    color: var(--color-pink);
+}
+
+/* main section.taina {
+    position: absolute;
+    width: 1920px;
+    height: 600px;
+    left: calc(50% - 1920px/2);
+    top: 1070px;
+}
+
+main section.taina .window {
+    position: absolute;
+    height: 320px;
+    left: 14%;
+    right: 14%;
+    top: 50%;
+    /* position: absolute;
+    top: 8vw;
+    left: 8vw;
+    bottom: 8vw;
+    display: grid;
+    row-gap: 20px;
+    background-color: var(--color-white);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 8vw;
+}
+
+main section.taina .window h2 {
+    position: absolute;
+    height: 90px;
+    right: 35px;
+}
+
+main section.taina .window span {
+    position: absolute;
+    height: 180px;
+    left: 0%;
+    right: 51.06%;
+    top: 140px;
+} 
+
+*/
+
