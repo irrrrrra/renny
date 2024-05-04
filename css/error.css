@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "DelaGothicOne";
+    src: url(../fonts/DelaGothicOne-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark-pink: #DF4069;
+    --color-pink: #FC7093;
+    --color-lite: #FFE5EC;
+    --color-lite-pink: #FDA7BD;
+}
+
+
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--color-lite);
+    color: var(--color-black);
+    padding: 20px 14vw;
+}
+
+nav .icons {
+    display: grid;
+    grid-template-columns: 20px 20px 48px;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: end;
+}
+
+nav .menu  {
+    display: grid;
+    grid-template-columns: repeat(3, 7vw);
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menu a {
+    display: grid;
+    justify-content: center;
+    color: var(--color-black);
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+main {
+    width: 1420px;
+    height: 420px;
+    margin: 290px 250px;
+}
+
+main h2 {
+    font-family: "DelaGothicOne";
+    font-size: 60px;
+    font-weight: 900;
+    margin-left: 460px;
+    margin: 0 0 80px 585px;
+}
+
+main p {
+    height: 60px;
+    width: 700px;
+    color: var(--color-black);
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    margin-left: 350px;
+    text-align: center;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 5vw 5vw;
+}
+
+button {
+    border: none;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 80px;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.btn1 {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-pink);
+    color: var(--color-dark-pink);
+    row-gap: 20px;
+}
+
+.btn2 {
+    background-color: var(--color-dark-pink);
+    color: var(--color-lite);
+}
+
+footer header li.gl{
+    color: var(--color-black);
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 160px;
+    align-items: center;
+}
+
+footer header .renny p {
+    color: var(--color-black);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: start;
+    padding: 20px 0 20px 0;
+}
+
+footer header {
+    background-color: var(--color-lite-pink);
+    padding: 140px 250px 20px 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+}
+
+footer header .renny {
+    margin-right: 450px;
+    width: 265px;
+    height: 195px;
+}
+
+footer header .renny svg {
+    margin-right: 5px;
+}
+
+footer header ul {
+    width: 220px;
+    height: 150px;
+}
+
+footer header ul li a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    justify-content: start;
+    padding-top: 10px;
+}
+
+.knop svg {
+    margin-right: 16px;
+}
+
+footer header p {
+    color: var(--color-black);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: start;
+    padding-top: 100px;
+}
